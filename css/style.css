@@ -7,6 +7,7 @@
     --blue2: #78acca; 
     --blue3: #2a92c4;
     --black: #444;
+    --black2: rgb(93, 91, 91);
     --light-color: #777;
     --bg-color: #f3f4f5;
     --border: .1rem solid rgba(80, 79, 79, 0.138);
@@ -40,6 +41,7 @@ body{
     padding-left: 30rem;
 }
 
+/* ------------------------------------------ */
 #menu-bars{
     position: fixed;
     top: 1rem;
@@ -55,6 +57,9 @@ body{
 
 
 }
+/* ------------------------------------------ */
+
+/* -------------------Sidebar----------------------- */
 
 .header{
     position: fixed;
@@ -63,7 +68,7 @@ body{
     z-index: 999;
     background: var(--bg-color);
     width:30rem;
-    border-right: var(--border);
+    /* border-right: var(--border); */
     height: 100%;
     padding:2rem;
     text-align: center;
@@ -102,44 +107,42 @@ body{
   
     
 }
+/* ------------------------------------------ */
+
+/* -----------------Home------------------------- */
+
 
 section{
     padding: 1rem 5%;
 }
 
 .home{
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:1.5;
+    position:relative;
+    height: 100vh;
+    overflow:hidden;
+    display: flex;
     
-}
-.home .image{
-    flex: 1 1 40rem;
-   
-}
-
-.home .image img{
-    width: 100%;
 }
 
 .home .content{
     flex: 1 1 40rem;
+    padding-top: 15%;
+    padding-right: 3rem;
 }
 
 .home .content .hi{
     font-size: 2rem;
-    color: var(--blue);
+    color: var(--black);
 }
 
-.home .content h3{
-    font-size: 4.5rem;
-    color: #111;
+.home .content h2{
+    font-size: 4rem;
+    color: var(--black);
     text-transform: uppercase;
 }
 
-.home .content h3 span{
-    font-size: 4.5rem;
+.home .content h2 span{
+    font-size: 4rem;
     color:var(--blue2);
    
 }
@@ -147,18 +150,21 @@ section{
 .home .content .info{
     font-size: 2.5rem;
     padding: .5rem 0;
+    color: var(--black);
   
 }
 
 .home .content .text{
     font-size: 1.7rem;
     padding: .5rem 0;
+    color: var(--black2);
+    width: 75%;
 }
 
 
 .btn{
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: .8rem 3rem;
     background: var(--blue);
     color: #fff;
@@ -173,6 +179,87 @@ section{
     background: #fff;
     box-shadow: var(--box-shadow-inset);
 }
+
+/* image part */
+
+.img{
+    flex: 1 1 40rem;
+    position:relative;
+    margin-top: 10%;
+    width: 500px;
+    height:500px;
+    background: radial-gradient(420px, #78acca, transparent 55%);
+    
+}
+
+#image-hero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 5;
+}
+
+#skills-icons{
+    z-index: 7;
+    height:100%;
+    animation: rotation 40s linear infinite;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#skills-icons img{
+    position: absolute;
+    border-radius: 50%;
+}
+
+#skills-icons img:nth-child(1){
+    top:0;
+    left:42%;
+}
+
+#skills-icons img:nth-child(2){
+    top:25%;
+    right:0;
+}
+
+#skills-icons img:nth-child(3){
+    top:70%;
+    left:70%;
+}
+
+#skills-icons img:nth-child(4){
+    top:25%;
+    left:0;
+}
+
+#skills-icons img:nth-child(5){
+    top:70%;
+    left:10%;
+}
+
+
+
+
+
+/* ----------------------------------------------- */
+
+/* -----------------About------------------------- */
+/* --------------------------------------------------- */
+/* -------------------Education----------------------- */
+/* ------------------------------------------------ */
+/* -------------------Skills----------------------- */
+/* ------------------------------------------------- */
+/* --------------------Project---------------------- */
+/* ------------------------------------------------- */
+/* ---------------------Contact--------------------- */
+/* ------------------------------------------------- */
+
+
 
 
 
