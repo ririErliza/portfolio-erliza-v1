@@ -96,7 +96,7 @@ body{
     border-radius: .5rem;
     font-size: 2rem;
     font-weight: 500;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     color: var(--black);
 }
 
@@ -331,6 +331,20 @@ section{
 /* --------------------------------------------------- */
 /* -------------------Education----------------------- */
 
+#education{
+    margin-top:6%;
+    margin-bottom: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#education-heading{
+    margin-bottom: 5rem;
+}
+
 .education .box-container{
     width: 500px;
     display: flex;
@@ -338,22 +352,50 @@ section{
     gap: .5rem;
 }
 
-.education .box-container .box{
-    position: relative;
-    flex:1 1 10rem;
-    border-left: .2rem solid var(--blue3);
+
+
+.education .box-container .line{
+    border-left: .2rem solid var(--blue2);
+    height:7rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    transform: translateX(50%);
+   
+}
+
+/* .education .box-container .box::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-1rem;
+    height:2rem;
+    width:2rem;
+    border-radius: 20%;
+    background: var(--blue2);
+} */
+
+
+.education .box-container .box .content{
+    background: rgba(255, 255, 255, 0.61);
+    padding:1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.education .box-container .box .content span{
+    color: #ffff;
+    font-size: 1rem;
+    background: var(--blue2);
+    border-radius: 5%;
+    padding:.4rem 1rem;
 
 }
 
-.education .box-container .content{
-    background: #ffff;
-    padding:1.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
-    border-radius: 5px;
-
+.education .box-container .box .content h3{
+    font-size: 1.7rem;
+    padding:.5rem 0;
+    color: var(--black2);
 
 }
 /* ------------------------------------------------ */
@@ -422,7 +464,13 @@ section{
     }
 
     .home .content{
+        text-align: center;
         padding: 5%;
+    }
+
+    .home .content .text{
+        
+        width: 100%;
     }
 
     .img{
@@ -449,12 +497,18 @@ section{
     }
 
     #about{
+        text-align: center;
         overflow: hidden;
     }
 
     #introduce-image, #hobby-image{
         left: -80px;
        
+    }
+
+    .education .box-container{
+        width: 200px;
+        gap: .5rem;
     }
 
     
