@@ -45,7 +45,7 @@ body{
 #menu-bars{
     position: fixed;
     top: 1rem;
-    right:1rem;
+    right:3rem;
     z-index:10000;
     color: var(--purple);
     box-shadow: var(--box-shadow);
@@ -170,7 +170,7 @@ section{
     font-size: 1.7rem;
     padding: .5rem 0;
     color: var(--black);
-    width: 85%;
+    width: 90%;
 }
 
 
@@ -178,7 +178,7 @@ section{
     display: inline-block;
     margin-top: 4rem;
     padding: .8rem 3rem;
-    background: var(--blue3);
+    background: var(--purple);
     color: #fff;
     font-size: 1.7rem;
     border-radius: .5rem;
@@ -197,9 +197,8 @@ section{
 .img{
     flex: 1 1 50rem;
     position:relative;
-    margin-top: 8%;
-    width: 550px;
-    height:550px;
+    width: 650px;
+    height:650px;
     background: radial-gradient(450px, #78acca, transparent 55%);
     
 }
@@ -230,9 +229,9 @@ section{
 }
 
 #skills-icons div i{
-    font-size: 6rem;
+    font-size: 3rem;
     color: var(--blue2);
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 #skills-icons div:nth-child(1){
@@ -272,8 +271,91 @@ section{
 /* ----------------------------------------------- */
 
 /* -----------------About------------------------- */
+.heading{
+    padding-top: 6%;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: var(--purple);
+
+}
+
+.heading span{
+    color: var(--blue2);
+}
+
+.about-part{
+    display: flex;
+}
+
+.about-content{
+    flex:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.about-image{
+    flex: 1;
+    position:relative;
+    width: 300px;
+    height:300px;
+    
+}
+
+@keyframes aboutImage{
+    0%, 100%{
+        transform: scale(.9);
+        border-radius: 20%;
+    }
+    50%{
+        transform: scale(.8);
+        border-radius: 70%;
+        opacity:1;
+    }
+}
+
+
+
+.about-image img{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top:20%;
+    left:20%;
+    /* transform: translate(-50%,-50%); */
+    border-radius: 50%;
+    animation: aboutImage 4s linear infinite;
+    opacity: 0.6;
+}
 /* --------------------------------------------------- */
 /* -------------------Education----------------------- */
+
+.education .box-container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.education .box-container .box{
+    position: relative;
+    flex:1 1 10rem;
+    border-left: .2rem solid var(--blue3);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.education .box-container .content{
+    background: #ffff;
+    padding:1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    border-radius: 5px;
+
+
+}
 /* ------------------------------------------------ */
 /* -------------------Skills----------------------- */
 /* ------------------------------------------------- */
@@ -302,6 +384,7 @@ section{
 @media (max-width:991px){
     html{
         font-size: 55%;
+        overflow-x: hidden;
        
     }
 
@@ -317,7 +400,7 @@ section{
 
 
     .header{
-        left:-120%;
+        left:-100%;
 
     }
 
@@ -333,7 +416,46 @@ section{
        
     }
 
-    .img{
-        display:none;
+    .home{
+        align-items: center;
+        flex-direction: column-reverse;
     }
+
+    .home .content{
+        padding: 5%;
+    }
+
+    .img{
+
+        margin-top: 15%;
+        width: 400px;
+        height:400px;
+        background: radial-gradient(250px, #78acca, transparent 55%);
+        
+        
+    }
+    
+    #image-hero{
+
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+
+    }
+
+    #skills-icons{
+        display: none;
+    }
+
+    #about{
+        overflow: hidden;
+    }
+
+    #introduce-image, #hobby-image{
+        left: -80px;
+       
+    }
+
+    
 }
