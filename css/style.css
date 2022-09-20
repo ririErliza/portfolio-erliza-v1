@@ -404,7 +404,7 @@ section{
 #skills-container{
     flex-wrap: wrap;
     display: flex;
-    gap:7rem;
+    gap:7.5rem;
     margin-top: 5rem;
 }
 
@@ -414,7 +414,7 @@ section{
 
 #skills-container img{
     display: block;
-    height: 5rem;
+    height: 6rem;
     width: auto;
     margin-bottom: 2rem;
 }
