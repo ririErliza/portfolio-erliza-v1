@@ -422,7 +422,63 @@ section{
 /* --------------------Project---------------------- */
 /* ------------------------------------------------- */
 /* ---------------------Contact--------------------- */
+.contact .row{
+display: flex;
+flex-wrap: wrap;
+gap:2rem;
 
+}
+
+.contact-info-container{
+    width: 40rem;
+}
+
+.contact-info-container .box{
+    margin-bottom: 3rem;
+    display: flex;
+    gap:1.5rem;
+}
+
+.contact-info-container .box i{
+    height:5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--purple);
+    color:#ffff;
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+
+form{
+    flex:1 1 42rem;
+}
+
+.inputBox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    width:49%;
+}
+
+.inputBox input, textarea{
+    padding:1.4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    color: var(--black2);
+    margin:.7rem 0;
+    font-size: 1.6rem;
+
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
 
 /* ------------------------------------------------- */
 
