@@ -276,6 +276,7 @@ section{
     font-size: 4rem;
     padding-bottom: 1rem;
     color: var(--purple);
+    margin-bottom: 5rem;
 
 }
 
@@ -341,9 +342,9 @@ section{
     justify-content: center;
 }
 
-#education-heading{
+/* #education-heading{
     margin-bottom: 5rem;
-}
+} */
 
 .education .box-container{
     width: 500px;
@@ -422,6 +423,10 @@ section{
 /* --------------------Project---------------------- */
 /* ------------------------------------------------- */
 /* ---------------------Contact--------------------- */
+
+#contact-heading{
+    text-align: center;
+}
 .contact .row{
 display: flex;
 flex-wrap: wrap;
@@ -430,11 +435,12 @@ gap:2rem;
 }
 
 .contact-info-container{
-    width: 40rem;
+    width: 30rem;
+    margin-top: 1rem;
 }
 
 .contact-info-container .box{
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     display: flex;
     gap:1.5rem;
 }
@@ -443,7 +449,7 @@ gap:2rem;
     height:5rem;
     width: 5rem;
     line-height: 5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     background: var(--purple);
     color:#ffff;
     border-radius: 0.5rem;
@@ -451,8 +457,16 @@ gap:2rem;
 
 }
 
+.box .info h3{
+    font-size: 1.6rem;
+}
+
+.box .info p{
+    color:var(--light-color)
+}
+
 form{
-    flex:1 1 42rem;
+    flex:1;
 }
 
 .inputBox{
@@ -465,12 +479,17 @@ input{
     width:49%;
 }
 
+#input-subject{
+    width: 100%;
+}
+
 .inputBox input, textarea{
     padding:1.4rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
     color: var(--black2);
     margin:.7rem 0;
     font-size: 1.6rem;
+    border-radius: 0.5rem;
 
 }
 
@@ -499,10 +518,9 @@ textarea{
 
 
 /* media queries */
-@media (max-width:991px){
+@media (max-width:450px){
     html{
-        font-size: 55%;
-        overflow-x: hidden;
+        font-size: 50%;
        
     }
 
@@ -585,6 +603,10 @@ textarea{
     .education .box-container{
         width: 200px;
         gap: .5rem;
+    }
+
+    .contact .row form .inputBox input{
+        width:100%;
     }
 
     
