@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio of Erliza Erbaryanti - Web Developer</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 <body>
     <div id="menu-bars" class="fas fa-bars"></div>
@@ -171,7 +175,60 @@
   </section>
    <!-- ----------------Projects----------------------->
    <section class="project" id="project">
-    <h1 class="heading" id="project-heading"> <span>My </span>Projects</h1>
+        <h1 class="heading" id="project-heading"> <span>My </span>Projects</h1>
+
+        <div class="row">
+            <div class="content">
+                <h3>Website A</h3>
+                <p>Tech used: ReactJS, Node.JS, MongoDB, Firebase</p>
+            </div>
+
+            <div class="image-slider swiper" style="--swiper-navigation-color: rgb(186, 186, 186); --swiper-pagination-color: #888">
+                <div class="swiper-wrapper">
+                    <a  class="swiper-slide"><img src="images/web-reviver.png" alt=""></a>
+                    <a  class="swiper-slide"><img src="images/web-reviver-login.png" alt=""></a>
+                    <a  class="swiper-slide"><img src="images/web-reviver-about.png" alt=""></a>
+                    <a  class="swiper-slide"><img src="images/web-reviver-footer.png" alt=""></a>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+                <!-- <div
+            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+            class="image-slider swiper mySwiper"
+            >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="images/web-reviver.png" />
+                </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="images/web-reviver-login.png" />
+                </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="images/web-reviver-about.png" />
+                </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="images/web-reviver-footer.png" />
+                </div>
+                </div>
+                
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div> -->
+        </div>
 
    </section>
     <!-- ----------------Contact----------------------->
@@ -224,7 +281,8 @@
         </div>
 
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

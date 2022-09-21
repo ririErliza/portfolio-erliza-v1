@@ -421,6 +421,56 @@ section{
 }
 /* ------------------------------------------------- */
 /* --------------------Project---------------------- */
+/* .project{
+    background: #ffff;
+    background-size: cover;
+    background-position: center;
+} */
+
+.project .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+
+}
+
+.project .row .content{
+    flex:1 1 40rem;
+}
+
+.project .row .content h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.project .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.project .row .image-slider{
+    flex:1 1 40rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.project .row .image-slider a img{
+    width:50rem;
+    height: auto;
+}
+
+.project .row .image-slider .monitor{
+    width:52rem;
+}
+
+/* .swiper-button-next, .swiper-button-prev{
+    color: var(--light-color)
+} */
+
+
 /* ------------------------------------------------- */
 /* ---------------------Contact--------------------- */
 
