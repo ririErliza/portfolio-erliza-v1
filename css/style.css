@@ -277,6 +277,7 @@ section{
     padding-bottom: 1rem;
     color: var(--purple);
     margin-bottom: 5rem;
+    text-align: center;
 
 }
 
@@ -474,9 +475,7 @@ section{
 /* ------------------------------------------------- */
 /* ---------------------Contact--------------------- */
 
-#contact-heading{
-    text-align: center;
-}
+
 .contact .row{
 display: flex;
 flex-wrap: wrap;
