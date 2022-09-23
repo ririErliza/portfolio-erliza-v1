@@ -41,11 +41,25 @@ body{
     padding-left: 30rem;
 }
 
+.heading{
+    padding-top: 3%;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: var(--purple);
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+.heading span{
+    color: var(--blue2);
+}
+
 /* ------------------------------------------ */
 #menu-bars{
     position: fixed;
-    top: 1rem;
-    right:3rem;
+    top: 2rem;
+    right:15rem;
     z-index:10000;
     color: var(--purple);
     box-shadow: var(--box-shadow);
@@ -271,32 +285,30 @@ section{
 /* ----------------------------------------------- */
 
 /* -----------------About------------------------- */
-.heading{
-    padding-top: 6%;
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    color: var(--purple);
-    margin-bottom: 5rem;
-    text-align: center;
-
+#about-heading{
+    text-align: left;
 }
 
-.heading span{
-    color: var(--blue2);
+.about-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-part{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-    text-align:justify;
-    text-justify:inter-word;
+    
     
 }
 
 .about-content{
     flex:2;
     font-size: 1.3rem;
+    text-align:justify;
+    text-justify:inter-word;
 }
 
 .about-image{
@@ -330,6 +342,10 @@ section{
     border-radius: 50%;
     animation: aboutImage 4s linear infinite;
     opacity: 0.6;
+}
+
+#introduce-image, #education-image, #hobby-image{
+    display:none;
 }
 /* --------------------------------------------------- */
 /* -------------------Education----------------------- */
@@ -487,7 +503,9 @@ section{
 
 /* ------------------------------------------------- */
 /* ---------------------Contact--------------------- */
-
+#contact-heading{
+    text-align: left;
+}
 
 .contact .row{
 display: flex;
@@ -529,6 +547,7 @@ gap:2rem;
 
 form{
     flex:1;
+    text-align: center;
 }
 
 .inputBox{
@@ -564,9 +583,23 @@ textarea{
 /* ------------------------------------------------- */
 
 
+/* ------------- scroll to top ---------------------- */
 
+.scrollTop{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    padding: 10px 15px;
+    background-color: var(--blue2);
+    color:#fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease 0s
+}
 
-
+.scrollTop:hover{
+    background-color: var(--purple);
+}
 
 
 
@@ -588,14 +621,12 @@ textarea{
 
     body{
         padding:0;
-        min-width: 100vw;
 
     
     }
 
     section{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin:5%;
     }
 
     #menu-bars{
@@ -688,13 +719,66 @@ textarea{
         
     }
 
+    /* about */
+
+    #about-heading{
+        text-align: center;
+    }
+
+
+    .about-part{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        
+        
+    }
+    
+    .about-content{
+        font-size: 1.3rem;
+        text-align:justify;
+        text-justify:inter-word;
+    }
+    
+    .about-image{
+        display: none;
+        
+    }
+
+    #introduce-image, #education-image, #hobby-image{
+        display:block;
+        width:200px;
+        margin-bottom: 2rem;
+        height:auto;
+        border-radius: 50%;
+        animation: aboutImage 4s linear infinite;
+        opacity: 0.6;
+
+    }
+
+    @keyframes aboutImage{
+        0%, 100%{
+            transform: scale(.9);
+            border-radius: 20%;
+        }
+        50%{
+            transform: scale(.8);
+            border-radius: 70%;
+            opacity:1;
+        }
+    }
 
 
 
-  
+ 
+
+
+
+
+  /* education */
 
     .education .box-container{
-        width: 200px;
+        width: 250px;
         gap: .5rem;
     }
 
@@ -714,11 +798,31 @@ textarea{
         height: auto;
     }
 
+    /* contact */
+
+    #contact-heading{
+        text-align: center;
+    }
+
 
     .contact .row form .inputBox input{
         width:100%;
     }
 
+    .contact-info-container{
+        margin-top: 5rem;
+       margin-right: 20%;
+       margin-left:20%;
+    }
+
+
+    .scrollTop{
+
+        bottom:30px;
+        right:100px;
+        z-index: 10000;
+      
+    }
 
 
 

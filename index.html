@@ -74,45 +74,56 @@
 
     <!-- ----------------About--------------------- -->
 <section class="about" id="about">
-    <h1 class="heading"> About <span>me</span></h1>
+    <h1 class="heading" id="about-heading"> About <span>me</span></h1>
 
-    <div class="about-part">
-        <div class="about-image">
-            <img src="images/Education.png" alt="hobby" id="education-image">
+    <div class="about-row">
+
+        <div class="about-part">
+            <div class="about-image">
+                <img src="images/Education.png" alt="education">
+            </div>
+    
+            <div class="about-content">
+                <p>
+                Speaking about my background in a brief, I graduated from Metallurgy and Materials Engineering. Being an Engineer was an exciting phase for me, however after some years being absent from the Industry, my life evolved. Then, there comes the period of questioning myself "What do I really want to do for the rest of my life? Something that sparks joy but also match to my life goal?"
+                </p>
+            </div>
         </div>
 
-        <div class="about-content">
-            <p>
-            Speaking about my background in a brief, I graduated from Metallurgy and Materials Engineering. Being an Engineer was an exciting phase for me, however after some years being absent from the Industry, my life evolved. Then, there comes the period of questioning myself "What do I really want to do for the rest of my life? Something that sparks joy but also match to my life goal?"
-            </p>
+        <img src="images/Education.png" alt="education" id="education-image">
+    
+        <div class="about-part">
+            <div class="about-content">
+                <p>
+                    After some thinking and researching, finally I decided to make a career change into Web Development. At first I did self-study but after joining a coding school in 2021, with good guidance I progressed much better. In 2022 I completed my training in Web Development, and to this time I keep working to improve my skills while enjoying my new role as a web developer.
+                </p>
+            </div>
+    
+            <div class="about-image">
+                <img src="images/Introduce.png" alt="introduce">
+            </div>
         </div>
+    
+        <div class="about-part">
+            <div class="about-image">
+                <img src="images/Hobby.png" alt="hobby">
+                
+            </div>
+    
+            <div class="about-content">
+                <p>
+                    For me, web developer is like a bridge between two parties with common ideas or purpose or goal, and it gives me a sense of fulfillment if I can connect people to work together, especially to create sustainable improvements for others. As much as I love what I am doing, I also like to keep a balance life. So when I am not coding or learning, I go out with my small family, enjoying nature, hiking, or simply wandering in forest.
+                
+                </p>
+            </div>
+        </div>
+
+        <img src="images/Introduce.png" alt="introduce" id="introduce-image">
+        <img src="images/Hobby.png" alt="hobby" id="hobby-image">
+
     </div>
 
-    <div class="about-part">
-        <div class="about-content">
-            <p>
-                After some thinking and researching, finally I decided to make a career change into Web Development. At first I did self-study but after joining a coding school in 2021, with good guidance I progressed much better. In 2022 I completed my training in Web Development, and to this time I keep working to improve my skills while enjoying my new role as a web developer.
-            </p>
-        </div>
-
-        <div class="about-image">
-            <img src="images/Introduce.png" alt="introduce" id="introduce-image">
-        </div>
-    </div>
-
-    <div class="about-part">
-        <div class="about-image">
-            <img src="images/Hobby.png" alt="hobby" id="hobby-image">
-            
-        </div>
-
-        <div class="about-content">
-            <p>
-                For me, web developer is like a bridge between two parties with common ideas or purpose or goal, and it gives me a sense of fulfillment if I can connect people to work together, especially to create sustainable improvements for others. As much as I love what I am doing, I also like to keep a balance life. So when I am not coding or learning, I go out with my small family, enjoying nature, hiking, or simply wandering in forest.
-            
-            </p>
-        </div>
-    </div>
+    
 
 
 </section>
@@ -235,33 +246,6 @@
         <h1 class="heading" id="contact-heading">Contact <span>Me</span></h1>
 
         <div class="row">
-            <div class="contact-info-container">
-                
-
-                <div class="box">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="info">
-                        <h3>Email:</h3>
-                        <p>erliza.erb@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <div class="info">
-                        <h3>Location:</h3>
-                        <p>Nordrhein-Westfalen, Germany</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <div class="info">
-                        <h3>Linkedin:</h3>
-                        <p>https://www.linkedin.com/in/erliza-erbaryanti89/</p>
-                    </div>
-                </div>
-            </div>    
 
             <form action="">
                 <div class="inputBox">
@@ -275,6 +259,36 @@
                     <input type="submit" value="send message" class="btn">
             </form>
 
+            <div class="contact-info-container">
+                
+
+                <div class="box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>erliza.erb@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="info">
+                        <h3>Location</h3>
+                        <p>Nordrhein-Westfalen, Germany</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div class="info">
+                        <h3>Linkedin</h3>
+                        <p>https://www.linkedin.com/in/erliza-erbaryanti89/</p>
+                    </div>
+                </div>
+            </div>    
+
+          
+
 
             
         </div>
@@ -286,6 +300,10 @@
         <hr>
         <div style="text-align: center; margin-top:15rem">Copyright Erliza Erbaryanti - 2022</div>
     </section>
+
+    <!-- scroll to top -->
+
+    <div onclick="scrollToTop()" class="scrollTop" id="buttonTop">to top</div>
 
 
 
