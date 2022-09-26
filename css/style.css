@@ -429,13 +429,21 @@ section{
 
 #skills-container div{
     text-align: center;
+    
 }
 
 #skills-container img{
     display: block;
-    height: 6rem;
+    height: 8rem;
     width: auto;
     margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+#skills-container img:hover{
+    transform: scale(150%);
+   
 }
 /* ------------------------------------------------- */
 /* --------------------Project---------------------- */
@@ -685,6 +693,7 @@ textarea{
 
     }
 
+  
     /* #skills-icons{
         display: none;
     } */
@@ -780,6 +789,15 @@ textarea{
     .education .box-container{
         width: 250px;
         gap: .5rem;
+    }
+
+    /* skills */
+
+    #skills-container{
+        gap:3rem;
+        margin-right: 10%;
+        margin-left: 10%;
+       
     }
 
 
