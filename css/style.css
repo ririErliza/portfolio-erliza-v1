@@ -309,6 +309,7 @@ section{
     font-size: 1.3rem;
     text-align:justify;
     text-justify:inter-word;
+    color: var(--black2);
 }
 
 .about-image{
@@ -597,21 +598,25 @@ textarea{
 
 /* ------------- scroll to top ---------------------- */
 
-.scrollTop{
-    position:fixed;
-    bottom:30px;
-    right:30px;
-    padding: 10px 15px;
-    background-color: var(--blue2);
-    color:#fff;
-    border-radius: 0.5rem;
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    background-color:#ffff; 
+    color: var(--purple); 
     cursor: pointer;
-    transition: all 0.5s ease 0s
-}
+    border-radius: 50%;
+    font-size: 2rem;
+    width:40px;
+    height:40px;
+    }
 
-.scrollTop:hover{
-    background-color: var(--purple);
-}
+    #myBtn:hover {
+    background-color:  var(--purple);
+    color:#f7f7f7;
+    }
 
 
 

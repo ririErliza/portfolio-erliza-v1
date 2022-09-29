@@ -39,20 +39,19 @@ var swiper = new Swiper(".image-slider", {
     },
   });
 
-  let mybutton = document.getElementById("buttonTop");
-
+  //to top button
+  mybutton = document.getElementById("myBtn");
   window.onscroll = function() {scrollFunction()};
-  
+
   function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+  } else {
+  mybutton.style.display = "none";
   }
-  
-  
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  }
+
+  function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
   }
