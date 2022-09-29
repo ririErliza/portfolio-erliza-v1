@@ -137,7 +137,7 @@
             <div class="content">
                 <span>2021 - 2022</span>
                 <h3>Web Development Program</h3>
-                <p>Get training in both frontend and backend development.</p>
+                <p>Get training in MERN Fullstack development.</p>
             </div>
 
         </div>
@@ -248,15 +248,15 @@
 
         <div class="row">
 
-            <form action="">
+            <form action="https://formsubmit.co/c99aed313b61b0779c785e5b960272d7" method="POST">
                 <div class="inputBox">
-                    <input type="text" placeholder="name" name="" id="">
-                    <input type="email" placeholder="email" name="" id="">
+                    <input type="text" placeholder="name" name="name" required>
+                    <input type="email" placeholder="email" name="email" required>
                 </div>
                 <div class="inputBox">
-                    <input type="text" placeholder="subject" name="" id="input-subject">
+                    <input type="text" placeholder="subject" name="subject" id="input-subject" required>
                 </div>
-                    <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+                    <textarea name="message" placeholder="message" cols="30" rows="10" required></textarea>
                     <input type="submit" value="send message" class="btn">
             </form>
 
@@ -264,7 +264,7 @@
                 
 
                 <div class="box">
-                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:erliza.erb@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     <div class="info">
                         <h3>Email</h3>
                         <p>erliza.erb@gmail.com</p>
@@ -272,20 +272,22 @@
                 </div>
 
                 <div class="box">
-                    <i class="fa-solid fa-map-location-dot"></i>
+                    <a href="https://github.com/ririErliza" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <div class="info">
+                        <h3>Github</h3>
+                        <p>https://github.com/ririErliza</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://www.google.com/maps/place/North+Rhine-Westphalia/@51.4090023,5.4155746,7z/data=!3m1!4b1!4m5!3m4!1s0x47b9167c8e4248a1:0x2f4c327e4fd78f5f!8m2!3d51.4332367!4d7.6615938" target="_blank"> <i class="fa-solid fa-map-location-dot"></i></a>
                     <div class="info">
                         <h3>Location</h3>
                         <p>Nordrhein-Westfalen, Germany</p>
                     </div>
                 </div>
 
-                <div class="box">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <div class="info">
-                        <h3>Linkedin</h3>
-                        <p>https://www.linkedin.com/in/erliza-erbaryanti89/</p>
-                    </div>
-                </div>
+               
             </div>    
 
           
@@ -311,6 +313,9 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     
 </body>
 </html>
