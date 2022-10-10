@@ -112,6 +112,9 @@ body{
     font-weight: 500;
     /* box-shadow: var(--box-shadow); */
     color: var(--black);
+    display: flex;
+    flex-flow:column;
+    justify-content:space-around;
 }
 
 .header .navbar a:hover{
